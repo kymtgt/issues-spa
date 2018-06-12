@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -46,9 +47,14 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.html$/,
+        loader: "html-loader"
       }
     ]
   },
+  plugins: [new HtmlWebpackPlugin()],
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
