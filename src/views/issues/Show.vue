@@ -16,10 +16,8 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'IssuesShow',
   data () {
     return {
-      loading: false,
       number: this.$route.params.number,
       issue: {},
     }

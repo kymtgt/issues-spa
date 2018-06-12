@@ -6,19 +6,7 @@
         router-link(:to="{name: 'issues-index'}") Issues一覧
 </template>
 
-<script>
-export default {
-  name: 'Home',
-  data () {
-    return {
-    }
-  }
-}
-</script>
-
 <style lang="sass" scoped>
-body
-  background: 
 main
   width: 100%
   position: absolute
