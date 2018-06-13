@@ -24,8 +24,6 @@ http://issues.tsugu.to/
 
 NPM, Webpack, VueJS(vue-cli), vue-router, axios を使って、githubのissuesを一覧・個別表示するSPAを実装しました。
 
-ローディング時などアニメーションやローディング画像などを入れておきたかったのですがもう少し時間がかかりそうだったのでここまででアップしています。
-
 ### 構成
 
 `src/` 以下に資源を置いており、buildすると `npm run build` 以下にbuild.jsとしてコンパイルされます。
@@ -62,3 +60,10 @@ Sassを使って書いています。
 - `_base` は要素ごとのデフォルトになるスタイルを指定します
 - `_layouts` はレイアウトに関わるスタイルを指定します
 - `_modules` はVueコンポーネントを横断するような共通スタイルをclass指定で入れていきます
+
+### TODO
+
+- 一覧のパネル的なUIはComponentに
+- ローディング時などアニメーションやローディング画像など入れたい（font-awesomeなど）
+- エラー時（APIのRATE LIMITなど）の処理未着手
+
